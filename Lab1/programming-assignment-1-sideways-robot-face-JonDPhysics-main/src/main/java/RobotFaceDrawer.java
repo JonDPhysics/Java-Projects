@@ -49,6 +49,16 @@ public class RobotFaceDrawer {
     }
 
     public static void drawCheckedPattern() {
+
+        for (int i = 0; i < 9; i++) {
+            if (i % 2 == 0) {
+                drawCheckedLineStartsFilled();
+            }
+            else{
+                drawCheckedLineStartsEmpty();
+            }
+        }
+       /*
        drawCheckedLineStartsFilled();
        drawCheckedLineStartsEmpty();
        drawCheckedLineStartsFilled();
@@ -58,6 +68,7 @@ public class RobotFaceDrawer {
        drawCheckedLineStartsFilled();
        drawCheckedLineStartsEmpty();
        drawCheckedLineStartsFilled();
+       */
     }
 
     public static void main(String[] args) {
