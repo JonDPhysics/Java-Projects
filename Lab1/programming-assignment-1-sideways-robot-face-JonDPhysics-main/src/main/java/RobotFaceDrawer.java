@@ -8,31 +8,65 @@
 public class RobotFaceDrawer {
 
     public static void drawTriangleUp() {
-         System.out.println("  *  ")
+        System.out.println("     *");
+        System.out.println("    / \\");
+        System.out.println("   /   \\");
+        System.out.println("  /     \\");
+        System.out.println(" /       \\");
+        System.out.println("/         \\");
     }
 
     public static void drawTriangleDown() {
-        // TODO: Implement this method
+        System.out.println("\\         /");
+        System.out.println(" \\       /");
+        System.out.println("  \\     /");
+        System.out.println("   \\   /");
+        System.out.println("    \\ /");
+        System.out.println("     *");
     }
 
     public static void drawDiamond() {
-        // TODO: Implement this method
+        System.out.println("     *");
+        System.out.println("    / \\");
+        System.out.println("   /   \\");
+        System.out.println("  /     \\");
+        System.out.println(" /       \\");
+        System.out.println("/         \\");
+        System.out.println("\\         /");
+        System.out.println(" \\       /");
+        System.out.println("  \\     /");
+        System.out.println("   \\   /");
+        System.out.println("    \\ /");
+        System.out.println("     *");
     }
 
     public static void drawCheckedLineStartsFilled() {
-        // TODO: Implement this method
+       System.out.println("# # # # # # # ");
     }
 
     public static void drawCheckedLineStartsEmpty() {
-        // TODO: Implement this method
+        System.out.println(" # # # # # # #");
     }
 
     public static void drawCheckedPattern() {
-        // TODO: Implement this method
+       drawCheckedLineStartsFilled();
+       drawCheckedLineStartsEmpty();
+       drawCheckedLineStartsFilled();
+       drawCheckedLineStartsEmpty();
+       drawCheckedLineStartsFilled();
+       drawCheckedLineStartsEmpty();
+       drawCheckedLineStartsFilled();
+       drawCheckedLineStartsEmpty();
+       drawCheckedLineStartsFilled();
     }
 
     public static void main(String[] args) {
-        // TODO: Implement this method
+        drawTriangleUp();
+        drawDiamond();
+        drawCheckedPattern();
+        drawDiamond();
+        drawTriangleDown();
+        
 
     }
 }
