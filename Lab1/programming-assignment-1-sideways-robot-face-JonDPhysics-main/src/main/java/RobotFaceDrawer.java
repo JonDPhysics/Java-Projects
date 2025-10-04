@@ -48,9 +48,9 @@ public class RobotFaceDrawer {
         System.out.println(" # # # # # # #");
     }
 
-    public static void drawCheckedPattern() {
+    public static void drawCheckedPattern(int x) {
 
-        for (int i = 0; i < 9; i++) {
+        for (int i = 0; i < x; i++) {
             if (i % 2 == 0) {
                 drawCheckedLineStartsFilled();
             }
@@ -74,7 +74,7 @@ public class RobotFaceDrawer {
     public static void main(String[] args) {
         drawTriangleUp();
         drawDiamond();
-        drawCheckedPattern();
+        drawCheckedPattern(9);
         drawDiamond();
         drawTriangleDown();
         
