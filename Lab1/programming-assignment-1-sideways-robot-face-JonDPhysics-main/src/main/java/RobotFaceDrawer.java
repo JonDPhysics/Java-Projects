@@ -26,18 +26,8 @@ public class RobotFaceDrawer {
     }
 
     public static void drawDiamond() {
-        System.out.println("     *");
-        System.out.println("    / \\");
-        System.out.println("   /   \\");
-        System.out.println("  /     \\");
-        System.out.println(" /       \\");
-        System.out.println("/         \\");
-        System.out.println("\\         /");
-        System.out.println(" \\       /");
-        System.out.println("  \\     /");
-        System.out.println("   \\   /");
-        System.out.println("    \\ /");
-        System.out.println("     *");
+        drawTriangleUp();
+        drawTriangleDown();
     }
 
     public static void drawCheckedLineStartsFilled() {
